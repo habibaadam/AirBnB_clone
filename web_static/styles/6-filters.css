@@ -9,27 +9,17 @@
     align-items: center;
 }
 
-button {
-    font-size: 18px;
-    background-color: #FF5A5F;
-    color: #FFFFFF;
-    height: 48px;
-    width: 20%;
-    border-radius: 4px;
-    margin-right: 30px;
-}
-
-button:hover {
-    opacity: 0.9;
-}
-
 .locations, .amenities {
     height: 100%;
     width: 25%;
     margin-left: 5%;
 }
 
-.locations:hover #location-ul {
+.locations {
+    border-right: 1px solid #DDDDDD;
+}
+
+.locations:hover #locations-ul {
     display: block;
     visibility: visible;
     opacity: 0.99;
@@ -37,11 +27,15 @@ button:hover {
     z-index: 100;
 }
 
-.locations {
-    border-right: 1px solid #DDDDDD;
+.amenities:hover #amenities-ul {
+    display: block;
+    visibility: visible;
+    opacity: 0.99;
+    background-color: #FAFAFA;
+    z-index: 100;
 }
 
-#locations.ul {
+#locations-ul {
     display: none;
     visibility: hidden;
     list-style: none;
@@ -49,18 +43,6 @@ button:hover {
 
 #locations-ul li {
     margin-bottom: 10px;
-}
-
-.amenities {
-    margin-left: -12%;
-}
-
-.amenities:hover #amenities.ul {
-    display: block;
-    visibility: visible;
-    opacity: 0.99;
-    background-color: #FAFAFA;
-    z-index: 100;
 }
 
 #amenities-ul {
@@ -73,18 +55,6 @@ button:hover {
 
 #amenities-ul li {
     margin-bottom: 10px;
-}
-
-.locations h3, .amenities h3 {
-    font-weight: 600;
-    margin-top: 10px;
-    margin-bottom: 0px;
-}
-
-.locations h4, .amenities h4 {
-    font-weight: 400;
-    font-size: 14px;
-    margin-top: 5px;
 }
 
 .popover {
@@ -104,4 +74,34 @@ button:hover {
 .popover ul {
     list-style: none;
     margin-left: -25px;
+}
+
+.amenities {
+    margin-left: -12%;
+}
+
+.locations h3, .amenities h3 {
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.locations h4, .amenities h4 {
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+button {
+    font-size: 18px;
+    background-color: #FF5A5F;
+    color: #FFFFFF;
+    height: 48px;
+    width: 20%;
+    border-radius: 4px;
+    margin-right: 30px;
+}
+
+button:hover {
+    opacity: 0.9;
 }
